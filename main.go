@@ -54,7 +54,7 @@ func main() {
 	port := ":8080"
 	fmt.Printf("Server berjalan di http://localhost%s\n", port)
 
-	if err := http.ListenAndServe(port, mux); err != nil {
+	if err := http.ListenAndServe(port, enableCORS(mux)); err != nil {
 		log.Fatalf("Gagal menjalankan server: %v", err)
 	}
 }
