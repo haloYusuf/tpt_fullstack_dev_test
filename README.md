@@ -6,9 +6,7 @@
 ![TailwindCSS](https://img.shields.io/badge/tailwindcss-%2338B2AC.svg?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
 
-> Antarmuka web responsif untuk Sistem Manajemen Produk. Dibangun dengan fokus pada kebersihan antarmuka (*clean UI*), *readability* kode, dan arsitektur *Single Page Application* (SPA) yang terstruktur.
-
-Aplikasi ini merupakan bagian *Frontend* yang terintegrasi langsung dengan *Backend* Go REST API untuk mengelola produk secara *real-time*.
+Aplikasi ini merupakan bagian *Frontend* yang terintegrasi langsung dengan *Backend* Go REST API untuk mengelola produk.
 
 ---
 
