@@ -46,17 +46,17 @@ Kode dipecah berdasarkan fungsionalitasnya agar mudah dipelihara:
 ```text
 src/
 ├── api/
-│   └── productApi.ts     # Sentralisasi panggilan HTTP (fetch) ke Backend Go.
+│   └── productApi.ts     # Pemanggilan HTTP ke Backend.
 ├── components/
-│   └── ProductForm.tsx   # Komponen formulir yang 'reusable' untuk Create dan Update.
+│   └── ProductForm.tsx   # Komponen form untuk Create dan Update.
 ├── pages/
 │   ├── Home.tsx          # Halaman '/' -> Menampilkan daftar semua produk.
 │   ├── AddProduct.tsx    # Halaman '/add' -> Halaman pembuatan produk baru.
 │   └── EditProduct.tsx   # Halaman '/edit/:id' -> Halaman pengeditan produk.
 ├── types/
-│   └── product.ts        # Definisi tipe data (Interface) standar TypeScript.
-├── App.tsx               # Konfigurasi perutean (Router) utama aplikasi.
-├── index.css             # Entry point untuk direktif Tailwind CSS.
+│   └── product.ts        # Blueprint tipe data standar TypeScript.
+├── App.tsx               # Konfigurasi routing utama aplikasi.
+├── index.css             # Entry point Tailwind CSS.
 └── main.tsx              # Entry point aplikasi React.
 ```
 
