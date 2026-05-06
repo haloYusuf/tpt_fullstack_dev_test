@@ -11,6 +11,24 @@ import (
 	"product-app-backend/service"
 )
 
+// Middleware untuk mengizinkan CORS
+func enableCORS(next http.Handler) http.Handler {
+	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+		// Mengizinkan akses (jika deploy nanti, ganti "*" dengan url Frontend)
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Header().Set("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS")
+		w.Header().Set("Access-Control-Allow-Headers", "Content-Type")
+
+		// Jika request adalah OPTIONS, langsung balas OK
+		if r.Method == "OPTIONS" {
+			w.WriteHeader(http.StatusOK)
+			return
+		}
+
+		next.ServeHTTP(w, r)
+	})
+}
+
 func main() {
 	// Inisialisasi Database
 	db := database.ConnectDB()
