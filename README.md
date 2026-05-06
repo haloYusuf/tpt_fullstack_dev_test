@@ -64,7 +64,7 @@ src/
 
 ---
 
-## 🚀 Panduan Memulai Lokal (Local Setup)
+## Panduan Memulai Lokal (Local Setup)
 
 Ikuti langkah berikut untuk menjalankan aplikasi ini di mesin Anda:
 
