@@ -1,4 +1,4 @@
-# Product Management Mini App - Backend
+# Product Management App - Backend
 
 Dokumentasi ini dibuat untuk memenuhi tugas seleksi Fullstack Developer Intern. Backend ini dibangun menggunakan bahasa **Go** tanpa framework eksternal (menggunakan `net/http`) dan menggunakan **PostgreSQL** sebagai database utama.
 
